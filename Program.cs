@@ -26,7 +26,7 @@ namespace PigLatinTranslator
             {
                 while (!exit)
                 {
-                    Console.WriteLine("Would you like to translate to English or Pig Latin?");
+                    Console.WriteLine("Would you like to translate to English or Pig Latin? (Type 'help' for options)");
                     Console.Write("> ");
                     command = Console.ReadLine();
                     command = command.ToLower().Trim();
@@ -53,8 +53,11 @@ namespace PigLatinTranslator
                             Console.Clear();
                             break;
 
+                        case "help":
+                            Console.WriteLine("You can type 'Pig Latin', 'English', 'Exit' (To exit the program), or 'Clear' to clear the console.");
+                            break;
+
                         default:
-                            exit = true;
                             break;
                     }
                 }
