@@ -58,6 +58,7 @@ namespace PigLatinTranslator
                             break;
 
                         default:
+                            exit = false;
                             break;
                     }
                 }
